@@ -1,0 +1,64 @@
+package dao;
+
+import java.util.ArrayList;
+
+import dto.Info;
+
+public class MemberRepository {
+	
+	private ArrayList<Info> listOfInfo = new ArrayList<Info>();
+	
+	public MemberRepository() {
+		Info Miyeon = new Info("Miyeon", null, null, null);
+		Miyeon.setMemberName("MIYEON");
+		Miyeon.setMemberBirth("1997.01.31");
+		Miyeon.setCategory("Main Vocal");
+		Miyeon.setMemberDescription("비주얼, 보컬 모두를 담당하고 있는 아이들의 명실상부 에이스");
+		Miyeon.setFilename("profile_MY.jpg");
+		
+		Info Minnie = new Info("Minnie", null, null, null);
+		Minnie.setMemberName("MINNIE");
+		Minnie.setMemberBirth("1997.10.23");
+		Minnie.setCategory("Main Vocal");
+		Minnie.setMemberDescription("독보적인 음색의 끝판왕");
+		Minnie.setFilename("profile_MN.jpg");
+		
+		Info Soyeon = new Info("Soyeon", null, null, null);
+		Soyeon.setMemberName("SOYEON");
+		Soyeon.setMemberBirth("1998.08.26");
+		Soyeon.setCategory("Main Rapper, Producer");
+		Soyeon.setMemberDescription("아이들을 이끄는 선장님");
+		Soyeon.setFilename("profile_SY.jpg");
+		
+		Info Yuqi = new Info("Yuqi", null, null, null);
+		Yuqi.setMemberName("YUQI");
+		Yuqi.setMemberBirth("1999.09.23");
+		Yuqi.setCategory("Sub Vocal");
+		Yuqi.setMemberDescription("입덕 담당 음색요정");
+		Yuqi.setFilename("profile_YQ.jpg");
+		
+		Info Shuhua = new Info("Shuhua", null, null, null);
+		Shuhua.setMemberName("SHUHUA");
+		Shuhua.setMemberBirth("2000.01.06");
+		Shuhua.setCategory("Sub Vocal");
+		Shuhua.setMemberDescription("막내온탑 비주얼");
+		Shuhua.setFilename("profile_SH.jpg");
+		
+		listOfInfo.add(Miyeon);
+		listOfInfo.add(Minnie);
+		listOfInfo.add(Soyeon);
+		listOfInfo.add(Yuqi);
+		listOfInfo.add(Shuhua);
+	
+	}
+	
+	public ArrayList<Info> getAllInfo(){
+		
+		return listOfInfo;
+		
+	}
+
+	
+	
+
+}
