@@ -1,0 +1,71 @@
+package dto;
+
+import java.io.Serializable;
+
+public class Info implements Serializable {
+		
+		private static final long serialVersionUID = -4274700572038677000L;
+		
+		private String memberName; //멤버 이름
+		private String memberBirth; //멤버 생일 정보
+		private String memberDescription; //멤버 소개
+		private String category; //포지션 분류
+		private String filename; //이미지 파일 명
+		
+		public Info() {
+			
+			super();
+		}
+
+		public Info(String memberName, String memberBirth, String memberDescription, String category) {
+			
+			this.memberName = memberName;
+			this.memberBirth = memberBirth;
+			this.memberDescription = memberDescription;
+			this.category = category;
+		}
+		
+		
+		
+		public String getMemberName() {
+			return memberName;
+		}
+		
+		public String getMemberBirth() {
+			return memberBirth;
+		}
+		
+		public void setMemberName(String memberName) {
+			this.memberName = memberName;
+		}
+		
+		public void setMemberBirth(String memberBirth) {
+			this.memberBirth = memberBirth;
+		}
+
+		public String getMemberDescription() {
+			return memberDescription;
+		}
+
+		public void setMemberDescription(String memberDescription) {
+			this.memberDescription = memberDescription;
+		}
+
+		public String getCategory() {
+			return category;
+		}
+
+		public void setCategory(String category) {
+			this.category = category;
+		}
+		
+		public String getFilename() {
+			return filename;
+			
+		}
+		public void setFilename(String filename) {
+			this.filename = filename;
+		}
+	
+
+	}
