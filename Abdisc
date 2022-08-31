@@ -1,0 +1,65 @@
+package dto;
+
+import java.io.Serializable;
+
+public class Abdisc implements Serializable {
+		
+		private static final long serialVersionUID = -4274700572038677000L;
+		
+		private String albumName; //앨범 이름
+		private String albumRelease; //앨범 발매일
+		private String releaseContry; //발매 국가
+		private String filename; //이미지 파일 명
+		
+		public Abdisc() {
+			
+			super();
+		}
+
+		public Abdisc(String albumName, String albumRelease, String releaseContry) {
+			
+			this.albumName = albumName;
+			this.albumRelease = albumRelease;
+			this.releaseContry = releaseContry;
+			
+		}
+		
+		
+		
+		public String getAlbumName() {
+			return albumName;
+		}
+		
+		public String getAlbumRelease() {
+			return albumRelease;
+		}
+		
+		public void setAlbumName(String albumName) {
+			this.albumName = albumName;
+		}
+		
+		public void setAlbumRelease(String albumRelease) {
+			this.albumRelease = albumRelease;
+		}
+
+		public String getReleaseContry() {
+			return releaseContry;
+		}
+
+		public void setReleaseContry(String releaseContry) {
+			this.releaseContry = releaseContry;
+		}
+
+	
+		public String getFilename() {
+			return filename;
+			
+		}
+		public void setFilename(String filename) {
+			this.filename = filename;
+		}
+
+	
+
+	}
+
