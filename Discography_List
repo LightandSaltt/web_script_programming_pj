@@ -1,0 +1,94 @@
+package dao;
+
+import java.util.ArrayList;
+
+import dto.Abdisc;
+
+public class DiscoList {
+	
+	private ArrayList<Abdisc> listOfAbdisc = new ArrayList<Abdisc>();
+	
+	public DiscoList() {
+		
+		Abdisc Iam = new Abdisc("I-am", null, null);
+		Iam.setAlbumName("I-AM");
+		Iam.setAlbumRelease("2018.05.02");
+		Iam.setReleaseContry("Korea");
+		Iam.setFilename("1st-Mini-Album_I-am_Online-Cover-300x300.jpg");
+		
+		Abdisc Han = new Abdisc("Han", null, null);
+		Han.setAlbumName("HANN(-)");
+		Han.setAlbumRelease("2018.08.14");
+		Han.setReleaseContry("Korea");
+		Han.setFilename("Digital-Single_HANN-300x300.jpg");
+		
+		Abdisc Imade = new Abdisc("Imade", null, null);
+		Imade.setAlbumName("I-MADE");
+		Imade.setAlbumRelease("2019.02.26");
+		Imade.setReleaseContry("Korea");
+		Imade.setFilename("2nd-mini_I-made-300x300.jpg");
+		
+		Abdisc Uo = new Abdisc("Uh-Oh", null, null);
+		Uo.setAlbumName("Uh-Oh");
+		Uo.setAlbumRelease("2019.06.26");
+		Uo.setReleaseContry("Korea");
+		Uo.setFilename("Uh-Oh_Online-Cover-300x300.jpg");
+		
+		Abdisc Itrust = new Abdisc("I-TRUST", null, null);
+		Itrust.setAlbumName("I-TRUST");
+		Itrust.setAlbumRelease("2020.04.06");
+		Itrust.setReleaseContry("Korea");
+		Itrust.setFilename("3rd-Mini-Album_I-trust_Online-Cover-300x300.jpg");
+		
+		Abdisc Itt = new Abdisc("i'M THE TREND", null, null);
+		Itt.setAlbumName("i'M THE TREND");
+		Itt.setAlbumRelease("2020.07.06");
+		Itt.setReleaseContry("Korea");
+		Itt.setFilename("iM-THE-TREND_300x300.jpg");
+		
+		Abdisc DD = new Abdisc("DUMDi DUMDi", null, null);
+		DD.setAlbumName("DUMDi DUMDi");
+		DD.setAlbumRelease("2020.08.03");
+		DD.setReleaseContry("Korea");
+		DD.setFilename("DUMDi-DUMD-300x300.jpg");
+		
+		Abdisc Iburn = new Abdisc("I burn", null, null);
+		Iburn.setAlbumName("I burn");
+		Iburn.setAlbumRelease("2021.01.11");
+		Iburn.setReleaseContry("Korea");
+		Iburn.setFilename("4th-Mini-Album_I-burn-300x300.jpg");
+		
+		Abdisc Windy = new Abdisc("Windy", null, null);
+		Windy.setAlbumName("Windy");
+		Windy.setAlbumRelease("2021.07.05");
+		Windy.setReleaseContry("Korea");
+		Windy.setFilename("1st-Mini-Album_Windy-300x300.jpg");
+		
+		Abdisc Ind = new Abdisc("TOMBOY", null, null);
+		Ind.setAlbumName("I NEVER DIE");
+		Ind.setAlbumRelease("2022.03.14");
+		Ind.setReleaseContry("Korea FULL ALBUM");
+		Ind.setFilename("1st-full-Album_I-NEVER-DIE-300x300.jpg");
+		
+
+		
+		listOfAbdisc.add(Iam);
+		listOfAbdisc.add(Han);
+		listOfAbdisc.add(Imade);
+		listOfAbdisc.add(Uo);
+		listOfAbdisc.add(Itrust);
+		listOfAbdisc.add(Itt);
+		listOfAbdisc.add(DD);
+		listOfAbdisc.add(Iburn);
+		listOfAbdisc.add(Windy);
+		listOfAbdisc.add(Ind);
+
+	}
+	
+public ArrayList<Abdisc> getAllAbdisc(){
+		
+		return listOfAbdisc;
+		
+	}
+
+}
